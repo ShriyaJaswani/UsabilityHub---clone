@@ -1,0 +1,97 @@
+/* three breakpoints--> 991, 767, 479 */
+/* this is not a mobile first site, so will be using max-width. */
+
+@media screen and (max-width: 991px) {
+
+    h3{
+        font-size: 1.2rem;
+    }
+
+    .nav-toggle {
+        display: block;
+        margin-right: 20px;
+    }
+
+    .nav-links {
+        display: none;
+    }
+
+    .examples-card{
+        width: calc(50% - 10px);
+        height: 180px;
+    }
+
+    .examples-area{
+        gap: 20px;
+    }
+
+    .cta-body{
+        padding-block: 80px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+
+    .primary-button{
+        width: 100%;
+    }
+
+    .header-section{
+        flex-direction: column-reverse;
+    }
+
+    .header-left{
+        max-width: 100vw;
+        text-align: center;
+    }
+
+    .features-card{
+        min-width: calc(50% - 10px);
+        justify-content: space-between;
+    }
+
+    .big-feature-container, #second-big-faeture{
+        flex-direction: column;
+    }
+
+    .footer-container{
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .link-colomn{
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 479px){
+
+    :root{
+        --padding-inline-section: 20px;
+    }
+
+    h1{
+        font-size: 2rem;
+    }
+    
+    h2{
+        font-size: 1.5rem;
+    }
+    
+    h3{
+        font-size: 1.5rem;
+    }
+
+    p{
+        font-size: 1rem;
+    }
+
+    .features-card{
+        min-width: 100%;
+    }
+
+    .examples-card{
+        width: 100%;
+    }
+}
