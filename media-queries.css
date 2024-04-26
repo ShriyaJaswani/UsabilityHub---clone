@@ -12,8 +12,27 @@
         margin-right: 20px;
     }
 
+    .main-nav{
+        position: relative;
+        overflow: initial;
+    }
     .nav-links {
-        display: none;
+        /* display: none; */
+        width: 100vw;
+        position: absolute;
+        background-color: white;
+        padding-bottom: 10px;
+        left: -100%;
+        top: 100%;
+        transition: 0.2s ease-in-out;
+    }
+    
+    .nav-links.active{
+        left: 0;
+    }
+
+    .nav-links ul {
+        flex-direction: column;
     }
 
     .examples-card{
